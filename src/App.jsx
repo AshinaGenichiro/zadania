@@ -6,6 +6,8 @@ import InteractiveCard from './components/InteractiveCard'
 import Simple from './components/SimpleButton'
 import Counter from './components/Counter'
 import LoginForm from './components/LoginForm'
+import CartCounter from './components/CartCounter'
+import ListManger from './components/ListManager'
 import './App.css'
 
 function App() {
@@ -18,6 +20,10 @@ function App() {
     <h2>Moduł 10</h2>
     <Counter/>
     <LoginForm/>
+    <CartCounter/>
+    <br></br>
+    <ListManger/>
+    
     </>
   )
 }
