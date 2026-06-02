@@ -8,6 +8,7 @@ import Counter from './components/Counter'
 import LoginForm from './components/LoginForm'
 import CartCounter from './components/CartCounter'
 import ListManger from './components/ListManager'
+import ContactForm from './components/ContactForm'
 import './App.css'
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     <CartCounter/>
     <br></br>
     <ListManger/>
-    
+    <ContactForm/>
     </>
   )
 }
