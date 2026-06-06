@@ -6,6 +6,7 @@ let isEmailOk = false;
 let isMessageOk = false;
 const [email,setEmail] = useState("");
 const [message,setMessage] = useState("");
+const [userMessage,setUserMessage] = useState("")
 function handleInputChange(event)
 {
     setEmail(event.target.value)
@@ -17,7 +18,9 @@ function handleMessageChange(event)
 function handleSumbit()
 {
     event.preventDefault();
+    setUserMessage(message);
 }
+
 return(
     <>
         <form onSubmit={handleSumbit}>
@@ -27,8 +30,9 @@ return(
             <label  htmlFor="Textarea" >Wpisz wiadomość</label>
             <textarea value={message} onChange={handleMessageChange} ></textarea>
             <br />
-            <button disabled={!email  || !message}>Potwierdź</button>
+            <button type="submit" disabled={!email  || !message}>Potwierdź</button>
         </form>
+        <p>{userMessage}</p>
     </>
 )
 

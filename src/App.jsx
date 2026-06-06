@@ -9,6 +9,7 @@ import LoginForm from './components/LoginForm'
 import CartCounter from './components/CartCounter'
 import ListManger from './components/ListManager'
 import ContactForm from './components/ContactForm'
+import ValidateForm from './components/ValidateForm'
 import './App.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <br></br>
     <ListManger/>
     <ContactForm/>
+    <ValidateForm/>
     </>
   )
 }
