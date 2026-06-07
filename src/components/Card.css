@@ -1,0 +1,41 @@
+.card {
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: background-color 300ms ease, transform 150ms ease;
+  background-color: #ffffff;
+  margin: 20px auto;
+  display: block;
+}
+
+.card:active {
+  transform: translateY(1px);
+}
+
+.normal {
+  background-color: #ffffff;
+  color: black;
+  height: 50px;
+}
+
+.expanded {
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+.card__icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.card__body-wrap {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 350ms cubic-bezier(.2, .8, .2, 1);
+}
+
+.card.expanded .card__body-wrap {
+  max-height: 300px;
+}
+
