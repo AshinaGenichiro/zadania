@@ -17,6 +17,12 @@ import Counter2 from './components/Counter2'
 import Alert from './components/Alert'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
+import Button from './components/Button/Button'
+import Card2 from './components/Card/Card'
+import Todo from './components/Todo/Todo'
+import Hero from './components/Hero'
+import PostsList from './components/PostsList'
+import Posts from './components/Posts'
 import './App.css'
 
 function App() {
@@ -48,8 +54,17 @@ function App() {
     <Alert type="success"/>
     <Alert type="warning"/>
     <Alert type="danger"/>
-
     <Footer/>
+    <h2>Moduł 21</h2>
+    <Button/>
+    <Card2/>
+    <Todo/>
+    <h2>Moduł 23</h2>
+    <Hero/>
+    <h2>Moduł 25</h2>
+    <PostsList/>
+    <h2>Moduł 26</h2>
+    <Posts/>
     </>
   )
 }
